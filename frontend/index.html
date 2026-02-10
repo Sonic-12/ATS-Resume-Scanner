@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATS Resume Checker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>ATS Resume Checker</h1>
+  <p>Upload your resume PDF and get your real ATS compatibility score.</p>
+
+  <input type="file" id="resumeFile" accept="application/pdf">
+
+  <button
+    type="button"
+    id="analyzeBtn"
+    class="btn primary"
+    onclick="analyze()"
+  >
+    Analyze
+  </button>
+
+  <p id="loading" style="display:none; color:#93c5fd;">
+    Analyzing resume… please wait
+  </p>
+
+  <div id="spinner" class="spinner" style="display:none;"></div>
+
+  <p id="error" style="color:#f87171;"></p>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/background.js"></script>
+</body>
+</html>
