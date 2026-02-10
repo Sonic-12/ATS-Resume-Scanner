@@ -110,12 +110,12 @@ The frontend will be available at http://127.0.0.1:5500
 
 ##  Scoring Categories
 
-### 1. Tailoring (25 points)
+### 1. Tailoring (45 points)
 - Job description keywords
 - Role-specific terminology
 - Industry alignment
 
-### 2. Content (25 points)
+### 2. Content (30 points)
 - Quantifiable achievements
 - Action verbs
 - Clear formatting
@@ -128,7 +128,7 @@ The frontend will be available at http://127.0.0.1:5500
 - Skills
 - Optional: Projects, Certifications, etc.
 
-### 4. ATS Essentials (25 points)
+### 4. ATS Essentials (45 points)
 - Text extractability
 - No images/graphics in critical sections
 - Standard fonts
