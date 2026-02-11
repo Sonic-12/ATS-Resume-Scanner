@@ -1,15 +1,13 @@
-// --------------------------------------------------
-// AUTO BACKEND SELECTOR (LOCAL vs GLOBAL)
-// --------------------------------------------------
-const API_BASE =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1"
-    ? "http://127.0.0.1:8000"
-    : "https://ats-resume-scanner-0doa.onrender.com";
+/* ==================================================
+   LOCAL-ONLY BACKEND CONFIG
+   ================================================== */
 
-// --------------------------------------------------
-// UPLOAD PAGE
-// --------------------------------------------------
+// Backend runs only on local machine
+const API_BASE = "http://127.0.0.1:8000";
+
+/* ==================================================
+   UPLOAD PAGE
+   ================================================== */
 async function analyze() {
   const fileInput = document.getElementById("resumeFile");
   const error = document.getElementById("error");
@@ -26,10 +24,10 @@ async function analyze() {
     return;
   }
 
-  // UX lock
+  // Lock UI
   btn.disabled = true;
   btn.innerText = "Analyzing...";
-  loading.style.display = "block";
+  if (loading) loading.style.display = "block";
   if (spinner) spinner.style.display = "block";
 
   const formData = new FormData();
@@ -46,17 +44,17 @@ async function analyze() {
 
     window.location.href = "result.html";
   } catch (e) {
-    error.innerText = "Backend not reachable.";
+    error.innerText = "Backend not reachable. Is FastAPI running?";
     btn.disabled = false;
     btn.innerText = "Analyze";
-    loading.style.display = "none";
+    if (loading) loading.style.display = "none";
     if (spinner) spinner.style.display = "none";
   }
 }
 
-// --------------------------------------------------
-// RESULT PAGE (TERMINAL-EXACT MIRROR)
-// --------------------------------------------------
+/* ==================================================
+   RESULT PAGE (TERMINAL-EXACT MIRROR)
+   ================================================== */
 document.addEventListener("DOMContentLoaded", () => {
   if (!window.location.pathname.includes("result.html")) return;
 
@@ -123,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   content.innerHTML = html;
 
-  // Auto-scroll safe (browser-safe)
+  // Safe auto-scroll
   setTimeout(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, 50);
