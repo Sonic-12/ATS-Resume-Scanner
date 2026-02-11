@@ -94,7 +94,7 @@ cd frontend
 # Or use a simple HTTP server:
 python -m http.server 5500
 
-The frontend will be available at http://127.0.0.1:5500
+The frontend will be available at http://127.0.0.1:5500/index.html
 ```
 ---
 ##  Data Handling & Privacy
