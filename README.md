@@ -107,6 +107,13 @@ The frontend will be available at http://127.0.0.1:5500/index.html
 - 6. **Client-side storage** - Results only stored temporarily in browser
 
 ---
+## Project Structure
+![Structure](Screenshots/Project Structure.png)
+
+## Code Page
+![Code](Screenshots/CODE.png)
+
+---
 
 ##  Scoring Categories
 
