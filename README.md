@@ -108,7 +108,7 @@ The frontend will be available at http://127.0.0.1:5500/index.html
 
 ---
 ## Project Structure
-![Structure](Screenshots/Project Structure.png)
+![Structure](Screenshots/Structure.png)
 
 ## Code Page
 ![Code](Screenshots/CODE.png)
