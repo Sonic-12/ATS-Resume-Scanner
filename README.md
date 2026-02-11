@@ -4,6 +4,8 @@ A practical ATS (Applicant Tracking System) resume analyzer that evaluates how r
 
 This project focuses on **structural correctness**, **parsing reliability**, and **common ATS failure modes** rather than resume templates or keyword stuffing.
 
+URL: https://ats-resume-scanner-ashen.vercel.app
+
 ---
 
 ##  What This Tool Does
@@ -58,8 +60,24 @@ This tool is designed to surface **real parsing and structural issues** that cau
 ### Frontend
 - **HTML/CSS/JavaScript** - Pure vanilla implementation
 - **No frameworks** - Lightweight and fast
-- **Canvas effects** - Browser-safe animations
 - **Local storage** - Temporary result persistence
+
+---
+## Running Globally
+
+### Prerequisites
+- Modern web browser 
+
+### Live Website
+- Application URL: https://ats-resume-scanner-ashen.vercel.app
+
+### Deployment Overview
+- The frontend is deployed as a static web application using Vercel.
+- The backend is deployed as a FastAPI service on Render.
+- The frontend automatically connects to the deployed backend when accessed online.
+- No local setup is required to use the hosted version.
+
+Users can upload a PDF resume directly through the website and receive a complete ATS analysis in real time.
 
 ---
 
@@ -144,6 +162,7 @@ The frontend will be available at http://127.0.0.1:5500/index.html
 - File format compatibility
 
 **Total Score:** 100 points
+---
 
 ## License
 
