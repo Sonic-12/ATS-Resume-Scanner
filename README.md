@@ -138,3 +138,13 @@ The frontend will be available at http://127.0.0.1:5500
 
 **Total Score:** 100 points
 
+## License
+
+This project is licensed under the MIT License.
+
+You are free to:
+- Use the code for personal or commercial projects
+- Modify and distribute the code
+- Include it in your own applications
+
+See the LICENSE file in the repository for full details.
